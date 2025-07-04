@@ -1,4 +1,4 @@
 # Dotfiles
 My dotfile for Hyprland, tested on Asahi Linux
 
-Including cava, fastfetch, fcitx, fcitx5, ibus, wofi, waylogout, Hyprland and Waybar
+Including cava, fastfetch, fcitx, fcitx5, ibus, wofi, waylogout, nvim, Hyprland and Waybar
