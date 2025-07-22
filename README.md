@@ -22,3 +22,4 @@ Blue Nacho Neko theme
 
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/079538cb-8233-4c12-b331-a0ebd41254d8" />
 
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/6d094eeb-bc9c-4323-b26e-9d4fae6fc899" />
