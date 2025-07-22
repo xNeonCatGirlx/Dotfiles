@@ -18,4 +18,7 @@ Lo-fi theme
 
 https://github.com/user-attachments/assets/5989d71d-d9ca-43db-a022-1391ffb8b04a
 
+Blue Nacho Neko theme
+
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/079538cb-8233-4c12-b331-a0ebd41254d8" />
 
