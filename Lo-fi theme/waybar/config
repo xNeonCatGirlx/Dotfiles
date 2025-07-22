@@ -1,0 +1,193 @@
+[
+ {
+  "layer": "top",
+  "height": 33,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-bottom": -15,
+  "margin-right": 0,
+  "spacing": 0,
+
+  "wlr/workspaces": {
+        "format": "{icon}",
+        "format-active": "{icon}",
+	"on-click": "activate",
+	"format-icons": {
+	   "urgent": "!",
+           "active": "●",
+	   "default": "○"
+        }
+    },
+
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "custom/lyrics"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+        "custom/cava",
+        "battery",
+        "pulseaudio"
+  ],
+
+  "clock": {
+    "format": "<b>{:%Y年%m月%d日 %H:%M %A }</b>",
+    "interval": 3,
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "on-click": "~/.config/hypr/scripts/waybar/cycle.sh"
+  },
+    "custom/lyrics": {
+    "exec": "/home/neoncatgirl/.config/waybar/scripts/lrcsnc_to_file.sh",
+    "interval": 0,
+    "return-type": "stdout"
+  },
+  "custom/cava": {
+    "exec": "~/.config/waybar/scripts/cava.sh",
+    "return-type": "text"
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon} <b>{percent}</b>",
+    "tooltip": false,
+    "format-icons": ["", "", ""]
+  },
+  "custom/launcher": {
+    "format": "",
+    "on-click": "bash $HOME/.config/rofi/powermenu/powermenu.sh",
+    "on-click-right": "bash $HOME/.config/rofi/run.sh"
+  },
+   "pulseaudio" : {
+    "scroll-step" : 1,
+    "format" : "{icon} {volume}%",
+    "format-muted" : "󰖁 Muted",
+    "format-icons" : {
+	    "default" : [ "", "", "" ]
+    },
+    "on-click" : "GDK_BACKEND=x11 pavucontrol",
+    "on-click-right" : "~/.config/hypr/scripts/control/volume --toggle",
+    "tooltip" : false
+   }  
+  },  
+  
+  {
+    "layer": "top",
+    "position": "bottom",
+    "height": 20,
+    "margin-top": -15,
+    "margin-left": 0,
+    "margin-bottom": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+   "modules-left": [
+    "custom/power",
+    "memory",
+    "cpu",
+    "temperature"
+  ],
+
+  "modules-center": [
+   "custom/daydots"
+  ],
+
+
+  "modules-right": [
+    "tray"
+  ],
+
+  "custom/power": {
+    "exec": "~/.config/waybar/scripts/power.sh",
+    "interval": 2,
+    "return-type": "text"
+  },
+
+  "custom/daydots": {
+    "exec": "~/.config/waybar/scripts/daydots.sh",
+    "interval": 60,
+    "format": "{text}"
+  },
+  "custom/lyrics": {
+    "exec": "/home/neoncatgirl/.config/waybar/scripts/lrcsnc_to_file.sh",
+    "interval": 0,
+    "return-type": "stdout"
+  },
+  "cpu": {
+    "interval": 2,
+    "format": " <b>{usage}%</b>",
+    "format-alt": "󰻠 {avg_frequency} GHz",
+    "on-click" : "wezterm --config-file ~/.config/wezterm/float.lua start --class floatwezterm btm -e --default_widget-type cpu"
+
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": " <b>{}%</b>",
+    "format-alt": " <b>{used}GiB</b>"
+  },
+
+  "temperature": {
+    "interval": 2,
+    "thermal-zone": 0,
+    "critical-threshold": 80,
+    "format-critical": " {temperatureC}°C</b>",
+    "format": " <b>{temperatureC}°C</b>"
+  },
+
+  "hyprland/workspaces" : {
+    "format" : "{icon}",
+    "on-click" : "activate",
+    "on-scroll-up" : "hyprctl dispatch workspace e+1",
+    "on-scroll-down" : "hyprctl dispatch workspace e-1",
+    "format-icons": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7"
+    }
+  },
+
+  "tray": {
+    "icon-size": 32,
+    "spacing": 10
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 30,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<b>{icon} {capacity}%</b>",
+    "format-charging": "<b>{icon}⚡{capacity}%</b>",
+    "format-icons": [" ", " ", " ", " "],
+    "max-length": 25,
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "<b> {essid}</b>",
+    "format-ethernet": "",
+    "tooltip": false,
+    "on-click": "bash ~/.config/waybar/scripts/rofi-wifi-menu.sh", 
+    "format-disconnected": "<b><󱚼/b>"
+  },
+
+  "bluetooth": {
+    "format": "<b></b>",
+    "format-connected": "<b> {device_alias}</b>",
+    "format-disabled": "<b></b>",
+    "interval": 30,
+    "on-click" : "blueman-manager",
+    "tooltip": false
+    }
+  }
+]
