@@ -1,0 +1,6 @@
+include ~/.cache/wal/colors-kitty.conf
+background_opacity 0.5
+# BEGIN_KITTY_THEME
+# Aquarium Dark
+include current-theme.conf
+# END_KITTY_THEME

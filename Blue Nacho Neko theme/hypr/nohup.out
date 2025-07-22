@@ -1,0 +1,10 @@
+[2025-05-22 19:10:25.195] [info] Using configuration file /etc/xdg/waybar/config.jsonc
+[2025-05-22 19:10:25.197] [info] Using CSS file /etc/xdg/waybar/style.css
+[2025-05-22 19:10:25.203] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2025-05-22 19:10:25.204] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2025-05-22 19:10:25.205] [warning] module sway/scratchpad: Disabling module "sway/scratchpad", Socket path is empty
+[2025-05-22 19:10:25.206] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2025-05-22 19:10:25.208] [warning] module sway/language: Disabling module "sway/language", Socket path is empty
+[2025-05-22 19:10:25.315] [error] Failed to query power-profiles-daemon via dbus: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-05-22 19:10:25.330] [info] Bar configured (width: 1600, height: 30) for output: eDP-1
+[2025-05-22 19:10:26.971] [info] Quitting.
