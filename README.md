@@ -3,6 +3,8 @@ My dotfile for Hyprland, tested on Asahi Linux
 
 Including cava, fastfetch, fcitx, fcitx5, wofi, waylogout, nvim, Hyprland and Waybar
 
+To change the color fo the theme, you will need to install pywals, and to match the theme in firefox, you will need https://github.com/Frewacom/pywalfox
+
 # Dependencies
 
 You will need:
@@ -11,6 +13,8 @@ lrcsnc from https://github.com/xNeonCatGirlx/lrcsnc-without-romanization
 cava from https://github.com/karlstav/cava
 
 pavucontrol from https://github.com/pulseaudio/pavucontrol
+
+pywals from https://github.com/dylanaraps/pywal
 
 For the power consumption in the bottom bar, you will need to find where the system reads your power and change it in the waybar config file
 
